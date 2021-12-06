@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(107, 83, 83, 0.5), rgb(61, 63, 53)), url("images/ls-p.jpeg") ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.logo{
+    height: 40px;
+    width: 70px;
+    cursor: pointer;
+}
+.nevigeson{
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 30px;
+    position: relative;
+}
+ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+ul li::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(238, 172, 7);
+    display: block;
+    position: absolute;
+    transition: 0.8s;
+}
+ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.content h1{
+    font-size: 50px;
+}
+.btn{
+    width: 250px;
+    padding: 15px 5px;
+    text-align: center;
+    margin: 25px 15px;
+    font-weight: bold;
+    color: white;
+    background: transparent;
+    border-radius: 30px;
+    border: #ebca11 solid 2px;
+    position: relative;
+}
+span{
+    background: gold;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 30px;
+    z-index: -1;
+    transition: 1s;
+
+}
+.btn:hover span{
+    width: 100%;
+}
